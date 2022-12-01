@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Sidebar {
+    background-color: rgb(221, 214, 214);
+    /* width: 434px; */
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.Sidebar nav {
+    padding: 35px;
+}
+
+.Sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.Sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.Sidebar nav li a:hover {
+    text-decoration: none;
+    color: rgba(0, 73, 243, 0.609);
+}
+
+.Main {
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+
+}
+
+.Infocontainer {
+    /* background-color: blue; */
+    height: 58vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 144px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.Hello {
+    font-size: 65px;
+}
+
+.Name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.About {
+    font-size: 40px;
+}
+
+.More About {
+    font-size: 20px;
+    margin-top: 23px;
+}
+
+.Buttons {
+    margin-top: 34px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    border-radius: 18px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0px 2.5px;
+    cursor: pointer;
+}
+
+.DevPic img {
+    height: 58vh;
+}
+
+.contactform {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0px 34px;
+    /* padding-top: 144px; */
+}
+
+.contactform form div {
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0px 0px 0px;
+    padding: 3px;
+}
+
+.contactform h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: midnightblue;
+    padding-top: 3px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#isclient {
+    width: 24px;
+    margin: 3px 0px;
+}
+
+#clientemail {
+    display: flex;
+    flex-direction: column;
+}
+
+#clientphone {
+    display: flex;
+    flex-direction: column;
+}
+
+#clientname {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#enqiry {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogitem {
+    margin: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.blogitem p {
+    margin: 20px;
+}
+
+.blogcontainer h1 {
+    margin: 23px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.intro h2 {
+    font-family: 'Dancing Script', cursive;
+    margin: 12px 12px;
+}
+
+.intro p {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 12px 12px;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.skill {
+    width: 250px;
+    height: 10px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 250px;
+    background-color: blueviolet;
+}
+
+.fifty {
+    width: 125px;
+    background-color: aqua;
+}
+
+.twentyfive {
+    width: 75px;
+    background-color: yellow;
+}
+
+.SidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 176px;
+}
+
+@media (max-width:1615px) {
+    .DevPic img {
+        height: 28vh;
+    }
+}
+
+@media(max-width:800px) {
+    .DevPic {
+        display: none;
+    }
+
+    .intro,
+    .blogcontainer,
+    .About,
+    .blogitem,
+    .btn,
+    .btn-sm,
+    .btn:hover,
+    .Buttons,
+    .contactform,
+    .container,
+    .cross,
+    .Devinfo,
+    .DevPic {
+        margin: 50px 8px;
+    }
+}
+
+@media(max-width:800px) {
+    .home {
+        font-size: 10px;
+    }
+}
